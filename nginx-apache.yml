@@ -23,9 +23,9 @@ containers:
     config:
       image: "stackhub/nginx-lb:latest"
       env:
-        SE_API_TOKEN: e160407e217f6bec
-        SE_BACKEND_KEY: apps/nginx-lb-2-apache-backend-eg-80/containers
-        SE_BACKEND_RANGE: "/apps/nginx-lb-2-apache-backend-eg-80/containers/*"
+        SE_API_TOKEN: 0c4c498808fc0b79
+        SE_LEADER_IP: 172.31.19.80
+        SE_SERVICE_DISCOVERY_KEY: nginx-lb-apache-backend-eg-80
       ports:
         - host_port: "8885"
           protocol: tcp
